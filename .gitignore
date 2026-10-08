@@ -1,0 +1,26 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+outputs/
+runs/
+artifacts/
+logs/
+*.log
+.env
+.env.*
+.venv/
+.github-release/
+*.zip
+
+# Downloaded datasets and upload archives (source scripts in data/ remain tracked)
+data/raw/
+data/prepared/
+data/maps/
+data/manifest.json
+data/collection/
+*.tar.gz
+*.tar.zst
+
+# Experiment records are generated locally.
+*.json
+*.jsonl

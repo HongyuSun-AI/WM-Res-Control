@@ -1,0 +1,8 @@
+map: Town04
+vehicle: vehicle.lincoln.mkz_2020
+spawn_index: 0
+weather: ClearNoon
+fixed_delta_seconds: 0.05
+max_substep_delta_time: 0.01
+max_substeps: 10
+tire_friction: 0.5

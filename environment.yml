@@ -1,0 +1,29 @@
+name: wm_res_control
+channels:
+  - defaults
+dependencies:
+  # Keep the CARLA-compatible Python minor version; let Conda choose patches.
+  - python=3.8
+  - pip<25
+  - pip:
+      - --index-url https://pypi.org/simple
+      - --extra-index-url https://download.pytorch.org/whl/cu121
+      # CUDA 12.1 builds for Linux with an NVIDIA GPU
+      - torch==2.4.1+cu121
+      - torchvision==0.19.1+cu121
+      # Numerical computation, images and plots
+      - numpy==1.24.4
+      - scipy==1.10.1
+      - Pillow==10.4.0
+      - opencv-python==5.0.0.93
+      - matplotlib==3.7.5
+      # CARLA runtime, navigation and geometry
+      - carla==0.9.15
+      - py-trees==0.8.3
+      - networkx==3.1
+      - shapely==2.0.7
+      - six==1.17.0
+      # Upstream agent wrapper and environment configuration
+      - pexpect==4.9.0
+      - transforms3d==0.4.2
+      - PyYAML==6.0.3
